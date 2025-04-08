@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="icons/js/all.min.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="main-nav">
+            <!-- Mobile Navbar -->
+            <div class="mobile-navbar flex justified">
+                <div class="navbar-toggleBox">
+                    <button class="nav-toggleBtn"><i class="fa-solid fa-bars bars"></i></button>
+                </div>
+
+                <div class="cartbox flex v-center">
+                    <button class="searchBtn"><i class="fa-solid fa-magnifying-glass mobile-search-icon"></i></button>
+                    <div class="cart">
+                        <button class="cart-btn"><span class="cart-counter flex centered">0</span> <i class="fa-solid fa-cart-shopping cart-icon"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-menu">
+                <div class="closebtn-box">
+                    <button class="close-btn"><i class="fa-solid fa-xmark close-icon"></i></button>
+                </div>
+                <div class="logo-box mobile-logo-box">
+                    <img src="images/CSG-logo.png" alt="Logo image">
+                    <p class="logo-text">Online Food Delivery Store</p>
+                </div>
+
+                <nav class="mobile-navlinks flex">
+                    <a href="#" class="mobile-links">Home</a>
+                    <a href="#" class="mobile-links">About Us</a>
+                    <a href="#" class="mobile-links">Menu</a>
+                    <a href="#" class="mobile-links">Blog</a>
+                    <a href="#" class="mobile-links">Services</a>
+                    <a href="#" class="mobile-links">Contact</a>
+                    <a href="#" class="mobile-links">Log in</a>
+                    <a href="#" class="mobile-links">Register</a>
+                </nav>
+
+                <div class="work-hours mobile-whrs">
+                    <p><b>Working hours:</b></p>
+                    <p class="time">Mon - Sun (9:00am - 11:00pm)</p>
+                </div>
+
+                <div class="contact-details mobile-cdts">
+                    <p> <b>Call us <a href="tel:+2348169376038" class="tel">(+234) 816 9376 038</a></b></p>
+                    <p class="email">Email us: <a href="mailto:"></a></p>
+                </div>
+
+                <!-- <div class="socials mb-socials flex centered">
+                    <a href="#" class="mb-social-links"><i class="fa-brands fa-facebook-f social-icons"></i></a>
+                    <a href="#" class="mb-social-links"><i class="fa-brands fa-instagram social-icons"></i></a>
+                    <a href="#" class="mb-social-links"><i class="fa-brands fa-tiktok social-icons"></i></a>
+                </div> -->
+            </div>
+            <!-- End Mobile Navbar -->
+
+            <!-- Desktop Navbar -->
+                <!-- Fixed Top bar -->
+                <div class="top-bar flex">
+                    <div class="wrapper flex justified">
+                        <div class="flex">
+                            <div class="socials">
+                                <a href="#" class="social-links"><i class="fa-brands fa-facebook-f social-icons"></i></a>
+                                <a href="#" class="social-links"><i class="fa-brands fa-instagram social-icons"></i></a>
+                                <a href="#" class="social-links"><i class="fa-brands fa-tiktok social-icons"></i></a>
+                            </div>
+
+                            <div class="search-box flex v-center">
+                                <i class="fa-solid fa-magnifying-glass search-icon" id="search"></i>
+                                <input type="search" name="" id="search-input" class="search-input">
+                            </div>
+                        </div>
+
+                        <div class="user-auth-box flex">
+                            <div class="login-box">
+                                <a href="#" class="login auth-link"><i class="fa-solid fa-user auth-icon"></i> Log in</a>
+                                <span class="divider">|</span>
+                            </div>
+
+                            <div class="register-box">
+                                <a href="#" class="register auth-link"><i class="fa-solid fa-user-pen auth-icon"></i> Register</a>
+                                <span class="divider">|</span>
+                            </div>
+
+                            <div class="cart">
+                                <button class="cart-btn"><span class="cart-counter flex centered">0</span> <i class="fa-solid fa-cart-shopping cart-icon"></i></button> <!-- Add Cart Icon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Fixed Top bar -->
+                <div class="wrapper">
+                    <div class="brand-details flex justified">
+                        <!-- Add Phone Icon Before -->
+                        <div class="contact-details">
+                            <p> <b>Call us <a href="tel:+2348169376038" class="tel">(+234) 816 9376 038</a></b></p>
+                            <p class="email">Email us: <a href="mailto:"></a></p>
+                        </div>
+
+                        <div class="logo-box">
+                            <img src="images/CSG-logo.png" alt="Logo image">
+                            <p class="logo-text">Online Food Delivery Store</p>
+                        </div>
+
+                        <!-- Add Clock Icon Before -->
+                        <div class="work-hours">
+                            <p><b>Working hours:</b></p>
+                            <p class="time">Mon - Sun (9:00am - 11:00pm)</p>
+                        </div>
+                    </div>
+                </div>
+
+              <nav class="primary-navbar flex centered">
+                <a href="#" class="nav-links active">Home</a>
+                <a href="#" class="nav-links">About Us</a>
+                <a href="#" class="nav-links">Menu</a>
+                <a href="#" class="nav-links">Blog</a>
+                <a href="#" class="nav-links">Services</a>
+                <a href="#" class="nav-links">Contact</a>
+              </nav>
+            
+            <!-- End Desktop Navbar -->
+        </header>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

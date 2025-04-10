@@ -181,7 +181,7 @@ button {
 
 .cart-icon {
     color: var(--white);
-    font-size: var(--f-sm);
+    font-size: var(--f-m);
 }
 
 .brand-details {
@@ -210,7 +210,7 @@ button {
     left: -25px;
 }
 
-.tel {
+.tel, .m-tel {
     color: #000;
 }
 .email, .time {
@@ -262,6 +262,7 @@ button {
 
 /* Mobile Navigation */
 .mobile-navbar {
+    height: 45px;
     background: var(--secondary);
     padding: .5rem 1rem;
     display: none;
@@ -275,7 +276,7 @@ button {
 .nav-menu {
     display: none;
     width: 80%;
-    height: 100%;
+    height: calc(100vh - 45px);
     background: var(--lighter-grey);
     padding: 1rem 2rem;
     user-select: none;
@@ -347,8 +348,16 @@ button {
         display: flex;
     }
 
-    .nav-menu.active{
+    .nav-menu.toggleMenu{
         display: block;
+    }
+
+    .contact-details, .work-hours {
+        position: relative;
+        /* padding-left: 15px; */
+        line-height: 1;
+        font-size: 14px;
+        user-select: none;
     }
     
 }

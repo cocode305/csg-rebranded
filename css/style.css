@@ -26,6 +26,9 @@
     --f-l: 26px;
     --f-xl: 32px;
     --f-xxl: 40px;
+
+    /* Font Family */
+    --poppins-regular: poppins-regular, san-serif;
 }
 
 /* ============================== Presets ============================== */
@@ -39,7 +42,7 @@ body {
     min-height: 100vh;
     max-width: 100%;
     overflow-x: hidden !important;
-    font-family: poppins-regular;
+    font-family: var(--poppins-regular);
 }
 
 .wrapper {
@@ -197,7 +200,7 @@ button {
 }
 
 .contact-details::before, .work-hours::before {
-    content: '';
+    content: 'f095';
     display: block;
     width: 30px;
     height: 30px;
@@ -231,6 +234,7 @@ button {
 }
 
 .work-hours::before {
+    content: 'f017';
     background: url('/icons/clock.svg');
 }
 

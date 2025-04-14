@@ -11,60 +11,64 @@
     <div class="container">
         <header class="main-nav">
             <!-- Mobile Navbar -->
-            <div class="mobile-navbar flex justified">
-                <div class="navbar-toggleBox">
-                    <button class="nav-toggleBtn"><i class="fa-solid fa-bars bars"></i></button>
-                </div>
+            <div class="mobile-navbar flex">
+                <div class="toggle-wrapper flex justified v-center">
+                    <div class="navbar-toggleBox">
+                        <button class="nav-toggleBtn"><i class="fa-solid fa-bars bars"></i></button>
+                    </div>
 
-                <div class="cartbox flex v-center">
-                    <button class="searchBtn"><i class="fa-solid fa-magnifying-glass mobile-search-icon"></i></button>
-                    <div class="cart">
-                        <button class="cart-btn"><span class="cart-counter flex centered">0</span> <i class="fa-solid fa-cart-shopping cart-icon"></i></button>
+                    <div class="cartbox flex v-center">
+                        <button class="searchBtn"><i class="fa-solid fa-magnifying-glass mobile-search-icon"></i></button>
+                        <div class="cart">
+                            <button class="cart-btn"><span class="cart-counter flex centered">0</span> <i class="fa-solid fa-cart-shopping cart-icon"></i></button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="nav-menu">
-                <div class="closebtn-box">
-                    <button class="close-btn"><i class="fa-solid fa-xmark close-icon"></i></button>
+                <div class="nav-menu-wrapper">
+                    <div class="nav-menu">
+                        <div class="closebtn-box">
+                            <button class="close-btn"><i class="fa-solid fa-xmark close-icon"></i></button>
+                        </div>
+                        <div class="logo-box mobile-logo-box">
+                            <img src="images/CSG-logo.png" alt="Logo image">
+                            <p class="logo-text">Online Food Delivery Store</p>
+                        </div>
+        
+                        <nav class="mobile-navlinks flex">
+                            <a href="#" class="mobile-links">Home</a>
+                            <a href="#" class="mobile-links">About Us</a>
+                            <a href="#" class="mobile-links">Menu</a>
+                            <a href="#" class="mobile-links">Blog</a>
+                            <a href="#" class="mobile-links">Services</a>
+                            <a href="#" class="mobile-links">Contact</a>
+                            <a href="#" class="mobile-links">Log in</a>
+                            <a href="#" class="mobile-links">Register</a>
+                        </nav>
+        
+                        <div class="work-hours mobile-whrs">
+                            <p><b>Working hours:</b></p>
+                            <p class="time">Mon - Sun (9:00am - 11:00pm)</p>
+                        </div>
+        
+                        <div class="contact-details mobile-cdts">
+                            <p>Call us <b><a href="tel:+2348169376038" class="m-tel">(+234) 816 9376 038</a></b></p>
+                            <p class="email">Email us: <a href="mailto:">email@example.com</a></p>
+                        </div>
+        
+                        <!-- <div class="socials mb-socials flex centered">
+                            <a href="#" class="mb-social-links"><i class="fa-brands fa-facebook-f social-icons"></i></a>
+                            <a href="#" class="mb-social-links"><i class="fa-brands fa-instagram social-icons"></i></a>
+                            <a href="#" class="mb-social-links"><i class="fa-brands fa-tiktok social-icons"></i></a>
+                        </div> -->
+                    </div>
                 </div>
-                <div class="logo-box mobile-logo-box">
-                    <img src="images/CSG-logo.png" alt="Logo image">
-                    <p class="logo-text">Online Food Delivery Store</p>
-                </div>
-
-                <nav class="mobile-navlinks flex">
-                    <a href="#" class="mobile-links">Home</a>
-                    <a href="#" class="mobile-links">About Us</a>
-                    <a href="#" class="mobile-links">Menu</a>
-                    <a href="#" class="mobile-links">Blog</a>
-                    <a href="#" class="mobile-links">Services</a>
-                    <a href="#" class="mobile-links">Contact</a>
-                    <a href="#" class="mobile-links">Log in</a>
-                    <a href="#" class="mobile-links">Register</a>
-                </nav>
-
-                <div class="work-hours mobile-whrs">
-                    <p><b>Working hours:</b></p>
-                    <p class="time">Mon - Sun (9:00am - 11:00pm)</p>
-                </div>
-
-                <div class="contact-details mobile-cdts">
-                    <p>Call us <b><a href="tel:+2348169376038" class="m-tel">(+234) 816 9376 038</a></b></p>
-                    <p class="email">Email us: <a href="mailto:">email@example.com</a></p>
-                </div>
-
-                <!-- <div class="socials mb-socials flex centered">
-                    <a href="#" class="mb-social-links"><i class="fa-brands fa-facebook-f social-icons"></i></a>
-                    <a href="#" class="mb-social-links"><i class="fa-brands fa-instagram social-icons"></i></a>
-                    <a href="#" class="mb-social-links"><i class="fa-brands fa-tiktok social-icons"></i></a>
-                </div> -->
             </div>
             <!-- End Mobile Navbar -->
 
             <!-- Desktop Navbar -->
                 <!-- Fixed Top bar -->
-                <div class="top-bar flex">
+                <div class="top-bar flex centered">
                     <div class="wrapper flex justified">
                         <div class="flex">
                             <div class="socials">
@@ -98,7 +102,7 @@
                 </div>
                 <!-- End Fixed Top bar -->
                 <div class="wrapper">
-                    <div class="brand-details flex justified">
+                    <div class="brand-details flex justified v-center">
                         <!-- Add Phone Icon Before -->
                         <div class="contact-details">
                             <p> <b>Call us <a href="tel:+2348169376038" class="tel">(+234) 816 9376 038</a></b></p>
@@ -129,6 +133,20 @@
             
             <!-- End Desktop Navbar -->
         </header>
+
+        <!-- ===================== HERO SECTION ============================= -->
+        <div class="hero flex v-center">
+            <div class="wrapper hero-content">
+                <h1 class="hero-heading">In our flavors, <br> we trust!</h1>
+                <p class="hero-text">Only this week. Don't miss......<br>
+                From <span style="
+                color: var(--dark-primary);
+                font-size: var(--f-xl);
+                font-weight: 700;
+                display: inline-block;">N3500</span></p>
+                <button class="btn cta-btn flex centered">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>

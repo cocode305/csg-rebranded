@@ -1,14 +1,14 @@
 @font-face {
     font-family: poppins-regular;
-    src: url(/fonts/Poppins-Regular.ttf);
+    src: url(../fonts/Poppins-Regular.ttf);
 }
 @font-face {
     font-family: poppins-medium;
-    src: url(/fonts/Poppins-Medium.ttf);
+    src: url(../fonts/Poppins-Medium.ttf);
 }
 @font-face {
     font-family: poppins-bold;
-    src: url(/fonts/Poppins-Bold.ttf);
+    src: url(../fonts/Poppins-Bold.ttf);
 }
 
 :root {
@@ -31,7 +31,9 @@
     --f-xxl: 52px;
 
     /* Font Family */
-    --poppins-regular: poppins-regular, san-serif;
+    --poppins-regular: poppins-regular;
+    --poppins-medium: poppins-medium;
+    --poppins-bold: poppins-bold;
 }
 
 /* ============================== Presets ============================== */
@@ -208,7 +210,7 @@ button {
     display: block;
     width: 30px;
     height: 30px;
-    background: url('/icons/phone.svg');
+    background: url('../icons/phone.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -238,7 +240,7 @@ button {
 }
 
 .work-hours::before {
-    background: url('/icons/clock.svg');
+    background: url('../icons/clock.svg');
 }
 
 .primary-navbar {
@@ -349,7 +351,7 @@ button {
     height: 500px;
     margin: 4rem auto 2rem;
     border-radius: 30px;
-    background: #d5e8ec url('/images/hero-img.png');
+    background: #d5e8ec url('../images/hero-img.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

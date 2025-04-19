@@ -9,129 +9,153 @@
 </head>
 <body>
     <div class="container">
-        <header class="main-nav">
-            <!-- Mobile Navbar -->
-            <div class="mobile-navbar flex">
-                <div class="toggle-wrapper flex justified v-center">
-                    <div class="navbar-toggleBox">
-                        <button class="nav-toggleBtn"><i class="fa-solid fa-bars bars"></i></button>
+        <header>
+            <!-- GETS ALL THE STYLING FOR THE SECONDARY NAVBAR -->
+            <div class="secondary-navbar flex h-center">
+                <!-- ========== DESKTOP SECONDARY NAVBAR ==========
+                *** Hide for smaller screens.
+                *** 
+                -->
+
+                <div class="desktop-secondary-navbar flex justified">
+                    <!-- 
+                    *** SOCIAL LINKS AND SEARCH BAR
+                    -->
+                    <div class="socials_search-box flex">
+                        <div class="socials">
+                            <a href="#" class="social-links"><i class="fa-brands fa-facebook-f social-icons"></i></a>
+                            <a href="#" class="social-links"><i class="fa-brands fa-instagram social-icons"></i></a>
+                            <a href="#" class="social-links"><i class="fa-brands fa-tiktok social-icons"></i></a>
+                        </div>
+
+                        <div class="search-box flex v-center">
+                            <i class="fa-solid fa-magnifying-glass search-icon" id="search"></i>
+                            <input type="search" name="" id="search-input" class="search-input">
+                        </div>
                     </div>
 
-                    <div class="cartbox flex v-center">
-                        <button class="searchBtn"><i class="fa-solid fa-magnifying-glass mobile-search-icon"></i></button>
-                        <div class="cart">
-                            <button class="cart-btn"><span class="cart-counter flex centered">0</span> <i class="fa-solid fa-cart-shopping cart-icon"></i></button>
+                    <!-- 
+                    *** USER AUTHORIZATION AND CART ICON BOX
+                    -->
+                    <div class="user-auth_cart-box flex">
+                        <div class="login-box">
+                            <a href="#" class="login auth-link"><i class="fa-solid fa-user auth-icon"></i> Log in</a>
+                            <span class="divider">|</span>
+                        </div>
+
+                        <div class="register-box">
+                            <a href="#" class="register auth-link"><i class="fa-solid fa-user-pen auth-icon"></i> Register</a>
+                            <span class="divider">|</span>
+                        </div>
+
+                        <div class="cart flex centered">
+                            <button class="cart-btn"><span class="cart-counter flex centered">0</span> <i class="fa-solid fa-cart-shopping cart-icon"></i></button> <!-- Add Cart Icon -->
                         </div>
                     </div>
                 </div>
 
-                <div class="nav-menu-wrapper">
-                    <div class="nav-menu">
-                        <div class="closebtn-box">
-                            <button class="close-btn"><i class="fa-solid fa-xmark close-icon"></i></button>
+                <!-- ======== MOBILE SECONDARY NAVBAR ==========
+                *** Display for smaller screens
+                *** Hide for desktop screens
+                ***
+                 -->
+                <div class="mobile-secondary-navbar flex h-center">
+                    <div class="toggle-wrapper flex justified v-center">
+                        <div class="navbar-toggleBox">
+                            <button class="nav-toggleBtn"><i class="fa-solid fa-bars bars"></i></button>
                         </div>
-                        <div class="logo-box mobile-logo-box">
-                            <img src="images/CSG-logo.png" alt="Logo image">
-                            <p class="logo-text">Online Food Delivery Store</p>
+    
+                        <div class="cartbox flex v-center">
+                            <button class="searchBtn"><i class="fa-solid fa-magnifying-glass mobile-search-icon"></i></button>
+                            <div class="cart flex centered">
+                                <button class="cart-btn"><span class="cart-counter flex centered">0</span> <i class="fa-solid fa-cart-shopping cart-icon"></i></button>
+                            </div>
                         </div>
-        
-                        <nav class="mobile-navlinks flex">
-                            <a href="#" class="mobile-links">Home</a>
-                            <a href="#" class="mobile-links">About Us</a>
-                            <a href="#" class="mobile-links">Menu</a>
-                            <a href="#" class="mobile-links">Blog</a>
-                            <a href="#" class="mobile-links">Services</a>
-                            <a href="#" class="mobile-links">Contact</a>
-                            <a href="#" class="mobile-links">Log in</a>
-                            <a href="#" class="mobile-links">Register</a>
-                        </nav>
-        
-                        <div class="work-hours mobile-whrs">
-                            <p><b>Working hours:</b></p>
-                            <p class="time">Mon - Sun (9:00am - 11:00pm)</p>
+                    </div>
+
+                    <!-- 
+                    *** SIDE BAR NAV MENU
+                    *** MOBILE SEARCH
+                    *** MOBILE CART 
+                    -->
+                    <div class="mobile-nav-menu-wrapper">
+                        <div class="mobile-nav-menu">
+                            <div class="closebtn-box">
+                                <button class="close-btn"><i class="fa-solid fa-xmark close-icon"></i></button>
+                            </div>
+                            <div class="logo-box mobile-logo-box">
+                                <img src="images/CSG-logo.png" alt="Logo image">
+                                <p class="logo-text">Online Food Delivery Store</p>
+                            </div>
+            
+                            <nav class="mobile-navlinks flex">
+                                <a href="#" class="mobile-links">Home</a>
+                                <a href="#" class="mobile-links">About Us</a>
+                                <a href="#" class="mobile-links">Menu</a>
+                                <a href="#" class="mobile-links">Blog</a>
+                                <a href="#" class="mobile-links">Services</a>
+                                <a href="#" class="mobile-links">Contact</a>
+                                <a href="#" class="mobile-links">Register</a>
+                                <div class="mobile-login-container">
+                                    <form action="" method="">
+                                        <input type="text" name="" class="mobile-login-input" id="mobile-username-input" placeholder="Username">
+                                        <input type="password" name="" class="mobile-login-input" id="mobile-password-input" placeholder="Password">
+                                        <button type="submit" id="mobile-login-btn" class="mobile-login-btn">Login</button>
+                                    </form>
+                                </div>
+                            </nav>
                         </div>
-        
-                        <div class="contact-details mobile-cdts">
-                            <p>Call us <b><a href="tel:+2348169376038" class="m-tel">(+234) 816 9376 038</a></b></p>
-                            <p class="email">Email us: <a href="mailto:">email@example.com</a></p>
+                    </div>
+
+                    <div class="mobile-search">
+                        <div class="mobile-search-wrapper flex centered">
+                            <i class="fa-solid fa-magnifying-glass search-icon" id="search"></i>
+
+                            <input type="search" name="" class="mobile-search-input" id="" placeholder="Search...">
                         </div>
-        
-                        <!-- <div class="socials mb-socials flex centered">
-                            <a href="#" class="mb-social-links"><i class="fa-brands fa-facebook-f social-icons"></i></a>
-                            <a href="#" class="mb-social-links"><i class="fa-brands fa-instagram social-icons"></i></a>
-                            <a href="#" class="mb-social-links"><i class="fa-brands fa-tiktok social-icons"></i></a>
-                        </div> -->
+                    </div>
+
+                    <div class="mobile-cart-menu">
+                            
                     </div>
                 </div>
             </div>
-            <!-- End Mobile Navbar -->
 
-            <!-- Desktop Navbar -->
-                <!-- Fixed Top bar -->
-                <div class="top-bar flex centered">
-                    <div class="wrapper flex justified">
-                        <div class="flex">
-                            <div class="socials">
-                                <a href="#" class="social-links"><i class="fa-brands fa-facebook-f social-icons"></i></a>
-                                <a href="#" class="social-links"><i class="fa-brands fa-instagram social-icons"></i></a>
-                                <a href="#" class="social-links"><i class="fa-brands fa-tiktok social-icons"></i></a>
-                            </div>
+            <!-- ========== LOGO SECTION ==========
+            *** Hide for smaller screens
 
-                            <div class="search-box flex v-center">
-                                <i class="fa-solid fa-magnifying-glass search-icon" id="search"></i>
-                                <input type="search" name="" id="search-input" class="search-input">
-                            </div>
-                        </div>
+             -->
+            <div class="brand">
+                <div class="brand-details flex justified v-center">
+                    <div class="contact-details">
+                        <p><b>Call us <a href="tel:+2348169376038" class="tel">(+234) 816 9376 038</a></b></p>
+                        <p><a href="mailto:" class="email">Email us: example@gmail.com</a></p>
+                    </div>
 
-                        <div class="user-auth-box flex">
-                            <div class="login-box">
-                                <a href="#" class="login auth-link"><i class="fa-solid fa-user auth-icon"></i> Log in</a>
-                                <span class="divider">|</span>
-                            </div>
+                    <div class="logo-box">
+                        <img src="images/CSG-logo.png" alt="Logo image">
+                        <p class="logo-text">Online Food Delivery Store</p>
+                    </div>
 
-                            <div class="register-box">
-                                <a href="#" class="register auth-link"><i class="fa-solid fa-user-pen auth-icon"></i> Register</a>
-                                <span class="divider">|</span>
-                            </div>
-
-                            <div class="cart">
-                                <button class="cart-btn"><span class="cart-counter flex centered">0</span> <i class="fa-solid fa-cart-shopping cart-icon"></i></button> <!-- Add Cart Icon -->
-                            </div>
-                        </div>
+                    <div class="work-hours">
+                        <p><b>Working hours:</b></p>
+                        <p class="time">Mon - Sun (9:00am - 11:00pm)</p>
                     </div>
                 </div>
-                <!-- End Fixed Top bar -->
-                <div class="wrapper">
-                    <div class="brand-details flex justified v-center">
-                        <!-- Add Phone Icon Before -->
-                        <div class="contact-details">
-                            <p> <b>Call us <a href="tel:+2348169376038" class="tel">(+234) 816 9376 038</a></b></p>
-                            <p class="email">Email us: <a href="mailto:"></a></p>
-                        </div>
+            </div>
 
-                        <div class="logo-box">
-                            <img src="images/CSG-logo.png" alt="Logo image">
-                            <p class="logo-text">Online Food Delivery Store</p>
-                        </div>
-
-                        <!-- Add Clock Icon Before -->
-                        <div class="work-hours">
-                            <p><b>Working hours:</b></p>
-                            <p class="time">Mon - Sun (9:00am - 11:00pm)</p>
-                        </div>
-                    </div>
-                </div>
-
-              <nav class="primary-navbar flex centered">
+            <!-- ========== PRIMARY NAVBAR ==========
+            *** Hide for smaller screens
+            
+            -->
+            <nav class="primary-navbar flex centered">
                 <a href="#" class="nav-links active">Home</a>
                 <a href="#" class="nav-links">About Us</a>
                 <a href="#" class="nav-links">Menu</a>
                 <a href="#" class="nav-links">Blog</a>
                 <a href="#" class="nav-links">Services</a>
                 <a href="#" class="nav-links">Contact</a>
-              </nav>
-            
-            <!-- End Desktop Navbar -->
+            </nav>
         </header>
 
         <!-- ===================== HERO SECTION ============================= -->

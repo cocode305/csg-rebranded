@@ -469,14 +469,6 @@ button {
         display: block;
     }
 
-    .contact-details, .work-hours {
-        position: relative;
-        /* padding-left: 15px; */
-        line-height: 1;
-        font-size: 14px;
-        user-select: none;
-    }
-
     .toggleMenu {
         display: block;
     }

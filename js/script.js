@@ -64,13 +64,13 @@ showSlides(slideIndex);
 document.querySelector('.prev').addEventListener('click', () => {
     stopAutoSlide();
     plusSlides(-1);
-    startAutoSlide();
+    //startAutoSlide();
 
 });
 document.querySelector('.next').addEventListener('click', () => {
     stopAutoSlide(); // stops the slide for a bit.
     plusSlides(1); // Change the slide.
-    startAutoSlide(); //Resume auto play.
+    //startAutoSlide(); //Resume auto play.
 });
 
 
@@ -79,7 +79,7 @@ document.querySelectorAll('.dots').forEach((dot, index) => {
     dot.addEventListener('click', () => {
         stopAutoSlide();
         currentSlide(index + 1);
-        startAutoSlide();
+        //startAutoSlide();
     });
 });
 
@@ -133,7 +133,7 @@ function stopAutoSlide() {
 }
 
 // START AUTO SLIDE
-startAutoSlide();
+//startAutoSlide();
 
 const heroSlider = document.querySelector('.hero-slider');
 

@@ -1,180 +1,18 @@
 [
     {
         "id": 1,
-        "name": "",
-        "price": "",
-        "image": "../images/",
+        "name": "Nigerian Jollof Rice",
+        "price": "2500",
+        "image": "images/nigerian-jollof-rice.jpeg",
         "category": "Rice",
         "isFavorite": false,
         "inCart": false
     },
     {
         "id": 2,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 3,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 4,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 5,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 6,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 7,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 8,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 9,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 10,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 11,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 12,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 13,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 14,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 15,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 106,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 17,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 18,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 19,
-        "name": "",
-        "price": "",
-        "image": "../images/",
-        "category": "Rice",
-        "isFavorite": false,
-        "inCart": false
-    },
-    {
-        "id": 20,
-        "name": "",
-        "price": "",
-        "image": "../images/",
+        "name": "Ghana Jollof Rice",
+        "price": "2500",
+        "image": "../images/ghana-jollof-rice",
         "category": "Rice",
         "isFavorite": false,
         "inCart": false

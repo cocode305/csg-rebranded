@@ -135,11 +135,11 @@ function stopAutoSlide() {
 // START AUTO SLIDE
 startAutoSlide();
 
-const heroSlider = document.querySelector('.hero-slider');
+const heroSlider = document.querySelector('.hero-slide');
 
-heroSlider.addEventListener('mouseover', stopAutoSlide);
+heroSlider.addEventListener('mouseover', stopAutoSlide());
 
-heroSlider.addEventListener('mouseout', startAutoSlide);
+heroSlider.addEventListener('mouseout', startAutoSlide());
 
 heroSlider.addEventListener('touchstart', (e) => {
     touchStartX = e.changedTouches[0].screenX;
@@ -154,13 +154,17 @@ function handleSwipe() {
     const swipeThreshold = 50; // Minimum distance in px to count as swipe.
 
     if (touchEndX < touchStartX - swipeThreshold) {
-        stopAutoSlide();
         plusSlides(1); //Swipe left - next
-        startAutoSlide();
     }
     if (touchEndX > touchStartX + swipeThreshold) {
-        stopAutoSlide();
         plusSlides(-1); // Swipe right - prev
-        startAutoSlide();
     }
 }
+
+async function getProducts() {
+    const response = await fetch ('../json/products.json');
+    const products = await response.json();
+    return products;
+}
+
+

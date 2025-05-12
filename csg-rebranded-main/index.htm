@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="icons/js/all.min.js" crossorigin="anonymous"></script>
+    <title>ColdScoop Gelato Restaurant</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- GETS ALL THE STYLING FOR THE SECONDARY NAVBAR -->
+            <div class="secondary-navbar flex h-center">
+                <!-- ========== DESKTOP SECONDARY NAVBAR ==========
+                *** Hide for smaller screens.
+                *** 
+                -->
+
+                <div class="desktop-secondary-navbar flex justified">
+                    <!-- 
+                    *** SOCIAL LINKS AND SEARCH BAR
+                    -->
+                    <div class="socials_search-box flex">
+                        <div class="socials">
+                            <a href="#" class="social-links"><i class="fa-brands fa-facebook-f social-icons"></i></a>
+                            <a href="#" class="social-links"><i class="fa-brands fa-instagram social-icons"></i></a>
+                            <a href="#" class="social-links"><i class="fa-brands fa-tiktok social-icons"></i></a>
+                        </div>
+
+                        <div class="search-box flex v-center">
+                            <i class="fa-solid fa-magnifying-glass search-icon" id="search"></i>
+                            <input type="search" name="" id="search-input" class="search-input">
+                        </div>
+                    </div>
+
+                    <!-- 
+                    *** USER AUTHORIZATION AND CART ICON BOX
+                    -->
+                    <div class="user-auth_cart-box flex v-center">
+                        <div class="login-box">
+                            <a href="#" class="login auth-link"><i class="fa-solid fa-user auth-icon"></i> Log in</a>
+                            <span class="divider">|</span>
+                        </div>
+
+                        <div class="register-box">
+                            <a href="#" class="register auth-link"><i class="fa-solid fa-user-pen auth-icon"></i> Register</a>
+                            <span class="divider">|</span>
+                        </div>
+
+                        <div class="cart flex centered">
+                            <button class="cart-btn"><span class="cart-counter flex centered">0</span> <i class="fa-solid fa-cart-shopping cart-icon"></i></button> <!-- Add Cart Icon -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ======== MOBILE SECONDARY NAVBAR ==========
+                *** Display for smaller screens
+                *** Hide for desktop screens
+                ***
+                 -->
+                <div class="mobile-secondary-navbar flex h-center">
+                    <div class="toggle-wrapper flex justified v-center">
+                        <div class="navbar-toggleBox">
+                            <button class="nav-toggleBtn"><i class="fa-solid fa-bars bars"></i></button>
+                        </div>
+    
+                        <div class="cartbox flex v-center">
+                            <button class="searchBtn"><i class="fa-solid fa-magnifying-glass mobile-search-icon"></i></button>
+                            <div class="cart flex centered">
+                                <button class="cart-btn"><span class="cart-counter flex centered">0</span> <i class="fa-solid fa-cart-shopping cart-icon"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 
+                    *** SIDE BAR NAV MENU
+                    *** MOBILE SEARCH
+                    *** MOBILE CART 
+                    -->
+                    <div class="mobile-nav-menu-wrapper">
+                        <div class="mobile-nav-menu">
+                            <div class="closebtn-box">
+                                <button class="close-btn"><i class="fa-solid fa-xmark close-icon"></i></button>
+                            </div>
+                            <div class="logo-box mobile-logo-box">
+                                <img src="images/CSG-logo.png" alt="Logo image">
+                                <p class="logo-text">Online Food Delivery Store</p>
+                            </div>
+            
+                            <nav class="mobile-navlinks flex">
+                                <a href="#" class="mobile-links">Home</a>
+                                <a href="#" class="mobile-links">About Us</a>
+                                <a href="#" class="mobile-links">Menu</a>
+                                <a href="#" class="mobile-links">Blog</a>
+                                <a href="#" class="mobile-links">Services</a>
+                                <a href="#" class="mobile-links">Contact</a>
+                                <a href="#" class="mobile-links">Register</a>
+                                <div class="mobile-login-container">
+                                    <form action="" method="">
+                                        <input type="text" name="" class="mobile-login-input" id="mobile-username-input" placeholder="Username">
+                                        <input type="password" name="" class="mobile-login-input" id="mobile-password-input" placeholder="Password">
+                                        <button type="submit" id="mobile-login-btn" class="mobile-login-btn">Login</button>
+                                    </form>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="mobile-search">
+                        <div class="mobile-search-wrapper flex centered">
+                            <i class="fa-solid fa-magnifying-glass search-icon" id="search"></i>
+
+                            <input type="text" name="" class="mobile-search-input" id="" placeholder="Search...">
+                        </div>
+                    </div>
+
+                    <div class="mobile-cart-menu">
+                            
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== LOGO SECTION ==========
+            *** Hide for smaller screens
+
+             -->
+            <div class="brand">
+                <div class="brand-details flex justified v-center">
+                    <div class="contact-details">
+                        <p><b>Call us <a href="tel:+2348169376038" class="tel">(+234) 816 9376 038</a></b></p>
+                        <p><a href="mailto:" class="email">Email us: example@gmail.com</a></p>
+                    </div>
+
+                    <div class="logo-box">
+                        <img src="images/CSG-logo.png" alt="Logo image">
+                        <p class="logo-text">Online Food Delivery Store</p>
+                    </div>
+
+                    <div class="work-hours">
+                        <p><b>Working hours:</b></p>
+                        <p class="time">Mon - Sun (9:00am - 11:00pm)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== PRIMARY NAVBAR ==========
+            *** Hide for smaller screens
+            
+            -->
+            <nav class="primary-navbar flex centered">
+                <a href="#" class="nav-links active">Home</a>
+                <a href="#" class="nav-links">About Us</a>
+                <a href="#" class="nav-links">Menu</a>
+                <a href="#" class="nav-links">Blog</a>
+                <a href="#" class="nav-links">Services</a>
+                <a href="#" class="nav-links">Contact</a>
+            </nav>
+        </header>
+
+        <!-- ===================== HERO SECTION ============================= -->
+        <div class="hero flex v-center">
+            <div class="hero-slide first-slide">
+                <div class="hero-content">
+                    <img src="images/User rating.png" alt="" class="user-ratings">
+                    <h1 class="hero-heading">Welcome to Cold<span class="deep-pink">Scoop</span> Gelato Where Flavor Meet Excellence!</h1>
+                    <button class="btn cta-btn flex centered">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                    <div class="dot-btns flex">
+                        <button class="dots"><span class="inner-dots"></span></button>
+                        <button class="dots"><span class="inner-dots"></span></button>
+                        <button class="dots"><span class="inner-dots"></span></button>
+                    </div>
+                </div>
+
+                <img src="images/hero-chicken-img.png" alt="" class="food-icon">
+            </div>
+
+            <div class="hero-slide second-slide">
+                <div class="hero-content second-slide-content">
+                    <p class="entry-note">little sweet everyday</p>
+                    <h1 class="hero-heading second-hero-heading">We Create</h1>
+                    <h2 class="second-hero-subheading">New Taste For Our Customers</h2>
+                    <p class="hero-para second-hero-para">Your happy place for unforgettable ice-cream moments. Grab a cone with the kids or give yourself a delicious treat, our creamy gelato is the sweet escape you deserve - made fresh, served cold, loved by all.</p>
+                    <button class="btn cta-btn flex centered">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                    <div class="dot-btns flex">
+                        <button class="dots"><span class="inner-dots"></span></button>
+                        <button class="dots"><span class="inner-dots"></span></button>
+                        <button class="dots"><span class="inner-dots"></span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-slide first-slide">
+                <div class="hero-content">
+                    <img src="images/User rating.png" alt="" class="user-ratings">
+                    <h1 class="hero-heading">Welcome to Cold<span class="deep-pink">Scoop</span> Gelato Where Flavor Meet Excellence!</h1>
+                    <button class="btn cta-btn flex centered">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                    <div class="dot-btns flex">
+                        <button class="dots"><span class="inner-dots"></span></button>
+                        <button class="dots"><span class="inner-dots"></span></button>
+                        <button class="dots"><span class="inner-dots"></span></button>
+                    </div>
+                </div>
+
+                <img src="images/hero-chicken-img.png" alt="" class="food-icon">
+            </div>
+
+            <div class="hero-slide third-slide">
+                <div class="hero-content">
+                    <img src="images/CSG-logo 1.png" alt="" class="third-slide-logo">
+                    <h1 class="third-slide-heading">Any Taste <br> You Imagine</h1>
+                    <p class="hero-para third-slide-para">We’re serving up creamy, bold, and unexpected flavors that keep your taste buds guessing. Cool down, scoop up, and treat yourself to something legendary.</p>
+                    <button class="btn cta-btn flex centered">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                    <div class="dot-btns flex">
+                        <button class="dots"><span class="inner-dots"></span></button>
+                        <button class="dots"><span class="inner-dots"></span></button>
+                        <button class="dots"><span class="inner-dots"></span></button>
+                    </div>
+                </div>
+
+                <img src="images/model.png" alt="" class="model">
+            </div>
+            
+            <div class="slide-btn-box flex">
+                <button class="slide-btn prev">&#10094;</button>
+                <button class="slide-btn next">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
